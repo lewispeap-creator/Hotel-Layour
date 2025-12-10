@@ -1,0 +1,169 @@
+/* Base Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px; /* Constrain width similar to the image */
+    margin: 0 auto;
+}
+
+/* --- Header Style (Minimal) --- */
+.info-header {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #333;
+}
+
+
+/* --- GUEST QUOTES SECTION --- */
+.guest-quotes-section {
+    padding: 30px 0 50px 0;
+    background-color: white; /* Light background for quotes */
+}
+
+.guest-quotes-section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.review-quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.review-quote-card {
+    background: #f7f7f7; /* Very light gray background for the card */
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-info {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.hotel-name {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.hotel-address {
+    font-size: 0.85em;
+    color: #666;
+    margin: 3px 0 0 0;
+}
+
+.review-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.like-percent {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #7b43a9; /* Purple accent color */
+}
+
+.like-count {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.quote-text {
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 10px;
+    border-left: 3px solid #7b43a9; /* Quote styling */
+}
+
+.reviewer-meta {
+    font-size: 0.8em;
+    color: #333;
+    margin: 0;
+    margin-top: auto; /* Pushes meta to the bottom */
+}
+
+
+/* --- DETAILED INFO SECTION --- */
+.detailed-info-section {
+    background-color: #313131; /* Dark background from the image */
+    color: white;
+    padding: 50px 0;
+}
+
+.detailed-info-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #7b43a9; /* Accent line */
+    padding-bottom: 10px;
+}
+
+.detailed-info-section h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #f7b32d; /* Secondary accent color */
+}
+
+.detailed-info-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.detailed-info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.detailed-info-section ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Custom bullet point styling (mimicking the look) */
+.detailed-info-section ul li:before {
+    content: '•'; 
+    position: absolute;
+    left: 0;
+    color: #f7b32d; 
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .review-quotes-grid {
+        grid-template-columns: 1fr;
+    }
+}

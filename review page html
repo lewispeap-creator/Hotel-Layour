@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIXTY LES Hotel Details & Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-navbar">
+        <div class="container navbar-content">
+            <div class="logo">The Review Hub</div>
+            <div class="nav-links" id="auth-links">
+                <a href="#" id="signup-btn">Sign Up</a>
+                <a href="#" id="login-btn">Sign In</a>
+            </div>
+            <div id="user-info" style="display:none;">
+                <span>Welcome, <strong id="username-display">User!</strong></span>
+                <a href="#" id="logout-btn">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="detail-page-main">
+        <div class="container">
+            <div class="breadcrumbs">
+                Home > New York > SIXTY LES
+            </div>
+
+            <section class="hotel-detail-section">
+                
+                <div class="hotel-gallery-main-image">
+                    <div class="main-image-placeholder">
+                        <div class="hp-tag">HP</div>
+                        <div class="review-stats-main">
+                            <span class="like-percent">89%</span>
+                            <span class="like-count">Liked It (5,862 Ratings)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-content-wrapper">
+                    <div class="hotel-info-column">
+                        <h1 class="hotel-title-detail">SIXTY LES</h1>
+                        <p class="hotel-location-detail">New York City | Lower East Side</p>
+                        
+                        <div class="description-block">
+                            <h2>Why We Like It</h2>
+                            <p>Vibrant homage poolside high design meets industrial chic. Rooms cool headboards designed by artist Lee Friedlander. Get high on sweat endorphins at the fitness center.</p>
+                        </div>
+
+                        <div class="small-image-grid">
+                            <div class="small-image-placeholder"></div>
+                            <div class="small-image-placeholder"></div>
+                            <div class="small-image-placeholder"></div>
+                        </div>
+
+                        <div class="description-block">
+                            <h2>Why Book With Us</h2>
+                            <div class="booking-comparison">
+                                <div class="price-row our-price">
+                                    <span>The Review Hub</span>
+                                    <span class="price-value">$984</span>
+                                </div>
+                                <div class="price-row competitor-price">
+                                    <span>Booking.com</span>
+                                    <span class="price-value">$1,059</span>
+                                </div>
+                            </div>
+                            <p class="comparison-note">Comparison excludes taxes and fees. Final price may vary. Booking can only be made until Check-in time.</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-widget-column">
+                        <div class="booking-widget-card">
+                            <div class="check-dates-group">
+                                <label for="check-in">Check-in</label>
+                                <input type="text" id="check-in" value="Tue, Dec 9">
+                            </div>
+                             <div class="check-dates-group">
+                                <label for="check-out">Check-out</label>
+                                <input type="text" id="check-out" value="Wed, Dec 10">
+                            </div>
+                            <button class="book-now-btn">BOOK NOW | $984</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="guest-reviews-section">
+                <h2>Guest Reviews & Feedback</h2>
+                <div class="review-quotes-grid">
+                    
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Overall Stay Quality</h3>
+                            <p class="hotel-address">SIXTY LES</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">★★★★★</span>
+                            <span class="like-count">Liked It (95% Recommended)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            The rooftop pool and bar scene are unparalleled in NYC. The industrial chic design is exactly my style. Room service was fast and friendly. Highly recommend!
+                        </blockquote>
+                        <p class="reviewer-meta">Sarah K.<br>December 2025</p>
+                    </article>
+
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Service and Location</h3>
+                            <p class="hotel-address">SIXTY LES</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">★★★★☆</span>
+                            <span class="like-count">Liked It (88% Recommended)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            Great location for exploring the Lower East Side. The front desk staff was very helpful. My only complaint was the street noise on the lower floor.
+                        </blockquote>
+                        <p class="reviewer-meta">Alex P.<br>November 2025</p>
+                    </article>
+                    
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Room Comfort</h3>
+                            <p class="hotel-address">SIXTY LES</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">★★★★★</span>
+                            <span class="like-count">Liked It (99% Recommended)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            The bed was very comfortable and the black-out curtains were perfect. Slept like a baby. A very clean and comfortable room. I will definitely be back.
+                        </blockquote>
+                        <p class="reviewer-meta">Michael T.<br>October 2025</p>
+                    </article>
+                </div>
+                
+                <div class="review-actions">
+                    <button class="add-review-btn">Add Your Review</button>
+                    <button class="load-more-btn">Load More Reviews</button>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

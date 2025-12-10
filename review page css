@@ -1,0 +1,362 @@
+/* --- Base Styles & Reused Styles --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #313131; /* Dark background color for the detail page */
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Top Navigation (From Main Page) --- */
+.top-navbar {
+    background-color: #1f1f1f; /* Slightly darker black */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+    font-size: 0.8em;
+    color: #aaaaaa;
+    padding: 20px 0 10px 0;
+}
+
+/* --- MAIN HOTEL DETAIL SECTION --- */
+.hotel-detail-section {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 30px;
+    padding-bottom: 40px;
+    background-color: #313131; 
+}
+
+/* Two-column layout for desktop */
+@media (min-width: 992px) {
+    .hotel-detail-section {
+        grid-template-columns: 2fr 1fr; /* Content column is wider than booking column */
+    }
+}
+
+/* Image Placeholder */
+.hotel-gallery-main-image {
+    grid-column: 1 / -1; /* Spans across all columns */
+    margin-bottom: 20px;
+}
+
+.main-image-placeholder {
+    height: 350px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+        url('https://via.placeholder.com/1200x400/000000/FFFFFF?text=SIXTY+LES+Pool+View') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hp-tag {
+    background-color: #7b43a9; /* Purple */
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    align-self: flex-start;
+}
+
+.review-stats-main {
+    text-align: right;
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.like-percent {
+    font-weight: bold;
+    color: #8c8c8c;
+    margin-right: 5px;
+}
+
+.like-count {
+    font-size: 0.8em;
+    color: #aaaaaa;
+}
+
+/* Wrapper for content columns */
+.detail-content-wrapper {
+    display: contents; /* Allows child elements to flow into the grid columns */
+}
+@media (min-width: 992px) {
+    .hotel-info-column {
+        grid-column: 1 / 2;
+    }
+    .booking-widget-column {
+        grid-column: 2 / 3;
+    }
+}
+
+
+/* Hotel Info Column */
+.hotel-title-detail {
+    font-size: 2.2em;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.hotel-location-detail {
+    font-size: 1em;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.description-block h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.description-block p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.small-image-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.small-image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+/* Booking Comparison */
+.booking-comparison {
+    margin-top: 15px;
+    background-color: #444;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.95em;
+    border-bottom: 1px dashed #555;
+}
+
+.our-price {
+    font-weight: bold;
+    color: #f7b32d; /* Yellow accent for our price */
+    border-bottom: none;
+}
+
+.price-value {
+    font-size: 1.1em;
+}
+
+.comparison-note {
+    font-size: 0.8em;
+    color: #8c8c8c;
+    margin-top: 10px;
+}
+
+
+/* --- BOOKING WIDGET COLUMN --- */
+.booking-widget-column {
+    position: sticky; /* Keep it visible while scrolling */
+    top: 20px;
+    align-self: start;
+}
+
+.booking-widget-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.check-dates-group {
+    margin-bottom: 15px;
+}
+
+.check-dates-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #aaaaaa;
+}
+
+.check-dates-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #313131;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.book-now-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #7b43a9; /* Purple accent */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #6a3493;
+}
+
+
+/* --- GUEST REVIEWS SECTION (Reused/Adapted) --- */
+.guest-reviews-section {
+    padding: 40px 0 60px 0;
+    background-color: #f0f0f0; /* Use light background for high contrast on reviews */
+    color: #333;
+}
+
+.guest-reviews-section h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.review-quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.review-quote-card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-info {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.hotel-name {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.hotel-address {
+    font-size: 0.85em;
+    color: #666;
+    margin: 3px 0 0 0;
+}
+
+.review-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.like-percent {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: gold; /* Using stars for the rating */
+}
+
+.like-count {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.quote-text {
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 10px;
+    border-left: 3px solid #f7b32d; /* Quote styling */
+}
+
+.reviewer-meta {
+    font-size: 0.8em;
+    color: #333;
+    margin: 0;
+    margin-top: auto; 
+}
+
+.review-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-review-btn, .load-more-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.load-more-btn {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.add-review-btn:hover { background-color: #0056b3; }
+.load-more-btn:hover { background-color: #e0f0ff; }

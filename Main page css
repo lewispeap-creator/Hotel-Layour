@@ -1,0 +1,304 @@
+/* Base Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- HERO SECTION STYLING (Combined Look) --- */
+.hero-section {
+    /* Background from Image 1, size/shape from Image 2 */
+    background: 
+        /* Overlay to darken image */
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), 
+        /* Placeholder for your background image */
+        url('https://via.placeholder.com/1920x600/333333/FFFFFF?text=New+York+City+Skyline') no-repeat center center;
+    background-size: cover;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start content from the top */
+    color: white;
+    text-align: center;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+    background-color: rgba(0, 0, 0, 0.4); /* Subtle transparent background */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Content */
+.hero-content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the title and search bar */
+    padding-top: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3.2em;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Search Bar (Styled after Image 1) */
+.search-bar {
+    background-color: transparent; /* No white background */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.search-input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 200px;
+}
+
+.search-input-group label {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.search-bar input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px 0 0 4px; /* Only round the left input corners */
+    min-width: 150px;
+}
+
+.search-bar .search-btn {
+    background-color: #7b43a9; /* Purple accent color */
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Only round the right button corners */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    height: 48px; /* Match input height */
+    align-self: flex-end; /* Align button to the bottom of the inputs */
+}
+
+.search-bar .search-btn:hover {
+    background-color: #6a3493;
+}
+
+/* --- COLLECTIONS/DEALS SECTION STYLING --- */
+.collections-section {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: left; /* Aligned left like Image 1 */
+}
+
+.collections-section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.collection-subtitle {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.hotel-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.hotel-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    text-align: left;
+}
+
+.card-image-placeholder {
+    height: 180px;
+    background-color: #ccc;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+}
+
+/* Specific background images for cards (for visual variety) */
+.first-card { background: url('https://via.placeholder.com/300x180/004085/FFFFFF?text=SIXTY+LES') no-repeat center center; }
+.second-card { background: url('https://via.placeholder.com/300x180/28a745/FFFFFF?text=Historic+Blue+Moor') no-repeat center center; }
+.third-card { background: url('https://via.placeholder.com/300x180/ffc107/333333?text=Ink48+Hotel') no-repeat center center; }
+
+
+.deal-tag {
+    background-color: #7b43a9; /* Purple tag from Image 1 */
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.hotel-title {
+    font-size: 1.1em;
+    margin: 0 0 5px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.hotel-location {
+    font-size: 0.8em;
+    margin: 3px 0 10px 0;
+    color: #999;
+}
+
+.price-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.new-price {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #cc0000; /* Red color for a strong deal emphasis */
+}
+
+.only-price {
+    color: #333;
+}
+
+.price-suffix {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.rating {
+    color: gold;
+    font-size: 0.9em;
+    margin: 8px 0 0 0;
+}
+
+/* --- FEATURES SECTION STYLING (From Image 2) --- */
+.features-section {
+    padding: 60px 0;
+    background-color: white;
+    border-top: 1px solid #eee;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 300px;
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.feature-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.feature-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search-input-group {
+        min-width: 100%;
+    }
+
+    .search-bar input {
+        border-radius: 4px !important;
+    }
+    
+    .search-bar .search-btn {
+        border-radius: 4px;
+        align-self: stretch;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+    
+    .feature-grid {
+        flex-direction: column;
+    }
+}

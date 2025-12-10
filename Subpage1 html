@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Guests Are Saying About New York City</title>
+</head>
+<body>
+
+    <header class="info-header">
+        <div class="container">
+            <div class="logo">The Review Hub</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="guest-quotes-section">
+            <div class="container">
+                <h2>What Guests Are Saying About New York City</h2>
+                
+                <div class="review-quotes-grid">
+                    
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Viana Hotel And Spa, Trade...</h3>
+                            <p class="hotel-address">3998 Brush Hollow Rd, Westbury</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">♥ 93%</span>
+                            <span class="like-count">liked it. (897 Ratings)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            Very comfortable bed and decent room. I would definitely recommend it. Hotel common spaces were very nice.
+                        </blockquote>
+                        <p class="reviewer-meta">William C.<br>October 2025</p>
+                    </article>
+
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Holiday Inn Long Island Islip...</h3>
+                            <p class="hotel-address">1730 North Ocean Avenue, Haltva...</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">♥ 93%</span>
+                            <span class="like-count">liked it. (388 Ratings)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            Fit the bill, check in was simple with nice staff. Everything about the hotel room was perfect, the bed was very comfortable. The pillows and bedding were quality. A very nice and important CLEAN... I will...
+                        </blockquote>
+                        <p class="reviewer-meta">Michael C.<br>September 2024</p>
+                    </article>
+
+                    <article class="review-quote-card">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">The L Hotel Brooklyn, NY</h3>
+                            <p class="hotel-address">139 32nd Street, Brooklyn-NY</p>
+                        </div>
+                        <div class="review-stats">
+                            <span class="like-percent">♥ 91%</span>
+                            <span class="like-count">liked it. (162 Ratings)</span>
+                        </div>
+                        <blockquote class="quote-text">
+                            While the neighborhood isn't the greatest, the hotel room was not shabby, the rooms are clean and beds comfortable. It is four blocks from the train that is a street train and the area was not bad but a lot.
+                        </blockquote>
+                        <p class="reviewer-meta">Michael N.<br>August 2025</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="detailed-info-section">
+            <div class="container">
+                
+                <h2>Best Hotels in New York City, New York</h2>
+                <p>New York City is kind of our jam. From industrial chic vibes in LES to elegant moments in Central Park we've got you covered. Wanna hit another borough? No problem, we know our way around.</p>
+                
+                <p>Known as the cultural center of the world, New York City is one of our favorite destinations. Whether you're a first-timer headed to the Empire State Building, a seasoned visitor finally making it to the MET or a business traveler taking clients to a Knicker game - New York City has plenty to offer with hotels to match.</p>
+
+                <h3>Why We Love New York City</h3>
+                <p>It's impossible to dial a city like New York City down to a few bullet points, but if we have to choose, here are a few of our favorite parts:</p>
+
+                <ul>
+                    <li>**Hottest hotels:** This is our bread and butter. New York City hotels totally crush it with style, service and selection. From celebrity mainstays with luxurious lobbies to cool boutiques that boast fun amenities, New York City hotels have it all.</li>
+                    <li>**Iconic attractions:** The city is truly endless. Central Park to Top of the Rock, Statue of Liberty to Grand Central Station. New York City is flooded with famous institutions, landmarks, museums and buildings. You can't hit them all in one trip but you can sure try.</li>
+                    <li>**Booming boroughs:** New York City stretches far beyond Manhattan. Exploring the other boroughs can be a great way to get to know the culture and the history of NYC. Grab some pizza in Brooklyn, graze the galleries in Queens, hit the zoo in the Bronx and catch a free ferry ride to Staten Island.</li>
+                    <li>**Good neighborhoods:** When you explore New York City, you pass through endless neighborhoods with distinct vibes and attractions. Visit the art scene down in the Financial District, experience Chinatown, see the Meatpacking District, admire architecture in Midtown or grab some food truck fare in Harlem. And that's just the tip of the iceberg.</li>
+                    <li>**Culture Shock!** For decades, artists, writers and musicians have made the pilgrimage to New York City leaving it one of the most culturally rich destinations in the world. From art giants like the MET and the Guggenheim to classic halls like the Apollo and the Beacon - there's endless places to be a fan.</li>
+                </ul>
+
+                <h3>Where to find the best deals in New York City, New York</h3>
+                <p>Looking for the best last-minute hotel deals in New York City? HotelTonight lets you book amazing hotels tonight, tomorrow or beyond at incredible rates. Just search New York City with HotelTonight and find a great hotel at an even better price.</p>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
